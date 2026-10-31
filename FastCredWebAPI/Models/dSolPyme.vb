@@ -63,6 +63,8 @@ Public Class dSolPyme
     Public Property cUser As String
     Public Property cLatitud As String
     Public Property cLong As String
+    Public Property cLatDomi As String 'mdipas 2026-des01
+    Public Property cLongDomi As String 'mdipas 2026-des01
     Public Property oImagenes As dFotosNegocio()
     Public Property nActualizadoNeg As Integer
 
@@ -491,6 +493,14 @@ Public Class dSolPyme
             cLong = "0"
         End If
 
+        'Geolocalizacion del domicilio - mdipas 2026-des01
+        If Not IsNumeric(cLatDomi) Then
+            cLatDomi = "0"
+        End If
+        If Not IsNumeric(cLongDomi) Then
+            cLongDomi = "0"
+        End If
+        '================================================
         'Siempre es Nuevo
         nCodEval = 0
 
@@ -513,6 +523,13 @@ Public Class dSolPyme
         oComm.Parameters.Add("@cUser", SqlDbType.VarChar, 50).Value = cUser
         oComm.Parameters.Add("@nLatitud", SqlDbType.Float).Value = CDec(cLatitud)
         oComm.Parameters.Add("@nLong", SqlDbType.Float).Value = CDec(cLong)
+
+        'mdipas 2026-des01
+        If CDec(cLatDomi) <> 0 Or CDec(cLongDomi) <> 0 Then
+            oComm.Parameters.Add("@nLatDomi", SqlDbType.Float).Value = CDec(cLatDomi)
+            oComm.Parameters.Add("@nLongDomi", SqlDbType.Float).Value = CDec(cLongDomi)
+        End If
+        '================================================
 
         'oComm.Parameters.Add("@nVentadialv", SqlDbType.Money).Value = nVentadialv
         'oComm.Parameters.Add("@nVentadiasd", SqlDbType.Money).Value = nVentadiasd
