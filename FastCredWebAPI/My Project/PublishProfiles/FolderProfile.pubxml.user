@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\ws_credito_movil</_PublishTargetUrl>
+    <History>True|2026-10-29T02:24:28.8777625Z;True|2026-10-08T13:28:55.1404837-05:00;True|2026-10-07T20:39:26.4494015-05:00;True|2026-10-05T19:11:16.3253691-05:00;True|2026-08-05T13:09:45.6015134-05:00;True|2026-04-23T19:12:39.4244633-05:00;True|2026-04-16T10:48:12.1390131-05:00;True|2026-04-14T17:27:44.1624943-05:00;True|2026-04-14T15:21:33.5421184-05:00;True|2026-04-12T14:03:37.2821847-05:00;True|2026-04-12T11:03:30.8358561-05:00;True|2026-04-11T17:53:11.3480636-05:00;True|2026-04-09T12:54:33.1653456-05:00;True|2026-04-07T13:25:16.7581096-05:00;True|2026-04-07T13:25:05.4369788-05:00;True|2026-04-06T13:18:41.9515431-05:00;True|2026-04-04T09:05:39.4083041-05:00;True|2026-04-04T09:05:30.7114943-05:00;True|2026-03-20T11:16:41.6201635-05:00;True|2026-02-12T09:55:35.0993455-05:00;True|2026-02-11T12:19:05.1753182-05:00;True|2026-01-15T17:26:08.7505135-05:00;True|2025-12-23T16:25:56.2768618-05:00;True|2025-12-23T15:48:57.5598003-05:00;True|2025-12-18T14:46:33.3422421-05:00;True|2025-12-05T16:35:11.1049191-05:00;True|2025-11-13T16:50:28.9637059-05:00;True|2025-11-11T23:37:16.3230653-05:00;True|2025-11-11T23:03:08.5819339-05:00;True|2025-11-09T20:21:19.4916042-05:00;True|2025-11-09T20:21:10.7418940-05:00;True|2025-11-09T19:53:15.8999390-05:00;True|2025-11-08T16:05:55.8902552-05:00;True|2025-10-08T11:02:42.2930904-05:00;True|2025-08-11T19:22:12.2328109-05:00;True|2025-08-11T16:26:12.6237467-05:00;True|2025-08-11T15:47:55.5268492-05:00;True|2025-06-22T01:06:01.3456626-05:00;True|2025-06-21T23:29:51.9967060-05:00;True|2025-05-09T07:57:53.7116191-05:00;True|2025-05-09T07:37:24.5606527-05:00;True|2025-05-09T07:22:36.7674870-05:00;True|2025-05-09T07:10:43.9689516-05:00;True|2025-05-09T07:05:13.2245622-05:00;True|2025-05-07T21:23:04.3503401-05:00;True|2025-04-18T12:28:41.7126496-05:00;True|2025-02-07T10:33:56.4859839-05:00;True|2025-02-07T10:17:02.6361560-05:00;True|2025-02-07T09:16:38.4663316-05:00;True|2024-12-14T13:16:10.7703973-05:00;True|2024-12-14T12:44:02.8251163-05:00;True|2024-12-14T12:39:20.9911851-05:00;True|2024-12-14T12:31:19.8249704-05:00;True|2024-12-14T09:34:23.4008089-05:00;True|2024-08-28T14:50:11.7003026-05:00;True|2024-08-28T13:25:03.1860902-05:00;True|2024-08-26T12:32:12.1874400-05:00;True|2024-08-26T12:28:36.1714471-05:00;True|2024-08-26T11:52:54.6630020-05:00;True|2024-08-21T12:28:38.8371626-05:00;True|2024-08-21T12:22:31.1444270-05:00;True|2024-08-21T12:19:14.0553357-05:00;True|2024-08-21T11:57:59.7709787-05:00;True|2024-08-21T11:51:34.5879625-05:00;True|2024-08-20T18:43:26.5822246-05:00;True|2024-08-20T18:41:12.6352981-05:00;True|2024-08-07T14:35:02.1924372-05:00;True|2024-08-07T02:22:20.1113226-05:00;False|2024-08-07T02:19:07.7856069-05:00;True|2024-08-07T01:33:24.2372453-05:00;True|2024-08-07T01:27:41.5609319-05:00;True|2024-08-06T21:09:08.9925073-05:00;True|2024-08-06T17:39:05.8941308-05:00;True|2024-08-05T16:18:43.8326783-05:00;True|2024-07-18T10:10:58.7699017-05:00;True|2024-07-17T13:20:45.2884246-05:00;True|2024-07-17T13:19:26.1599087-05:00;True|2024-07-04T18:54:55.4149978-05:00;True|2024-07-04T17:34:35.8958187-05:00;True|2024-07-03T11:32:28.3968163-05:00;True|2024-07-03T10:52:31.8270061-05:00;True|2024-07-03T01:35:41.4417946-05:00;True|2024-07-02T17:17:41.9705787-05:00;True|2024-07-02T11:59:36.5446259-05:00;True|2024-07-02T10:20:19.3177664-05:00;True|2024-07-02T01:48:46.3408258-05:00;True|2024-06-28T10:44:59.7630016-05:00;True|2024-06-27T02:07:26.2710526-05:00;True|2024-06-12T21:27:16.1978840-05:00;True|2024-06-12T20:06:42.1689827-05:00;True|2024-06-12T16:29:00.2147846-05:00;True|2024-06-05T18:36:13.5946685-05:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Areas/HelpPage/HelpPage.css">
+      <publishTime>07/17/2024 11:04:39</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Api.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/CollectionModelDescription.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ComplexTypeModelDescription.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/DictionaryModelDescription.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/EnumTypeModelDescription.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/KeyValuePairModelDescription.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ModelDescriptionLink.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Samples.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/SimpleTypeModelDescription.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Index.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/ResourceModel.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Shared/_Layout.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Web.config">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/_ViewStart.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/es/EntityFramework.resources.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/es/EntityFramework.SqlServer.resources.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/es/System.Net.Http.Formatting.resources.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Helpers.resources.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Http.resources.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Http.WebHost.resources.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Mvc.resources.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Optimization.resources.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Razor.resources.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.resources.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/FastCredWebAPI.dll">
+      <publishTime>10/28/2026 21:24:22</publishTime>
+    </File>
+    <File Include="bin/FastCredWebAPI.pdb">
+      <publishTime>10/28/2026 21:24:22</publishTime>
+    </File>
+    <File Include="bin/FastCredWebAPI.xml">
+      <publishTime>10/28/2026 21:24:21</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Bcl.AsyncInterfaces.dll">
+      <publishTime>03/03/2026 14:15:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/System.Buffers.dll">
+      <publishTime>03/19/2025 15:55:38</publishTime>
+    </File>
+    <File Include="bin/System.IO.Pipelines.dll">
+      <publishTime>03/03/2026 14:17:16</publishTime>
+    </File>
+    <File Include="bin/System.Memory.dll">
+      <publishTime>04/03/2025 18:00:54</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/System.Numerics.Vectors.dll">
+      <publishTime>03/19/2025 15:55:42</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>04/03/2025 18:00:52</publishTime>
+    </File>
+    <File Include="bin/System.Text.Encodings.Web.dll">
+      <publishTime>03/03/2026 14:17:18</publishTime>
+    </File>
+    <File Include="bin/System.Text.Json.dll">
+      <publishTime>03/03/2026 14:22:06</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.Extensions.dll">
+      <publishTime>04/03/2025 18:00:52</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>07/17/2024 11:04:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>07/17/2024 11:04:45</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.ActualizaIMEIResponse.datasource">
+      <publishTime>10/15/2019 13:50:34</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.AnulaDesembolsoResponse.datasource">
+      <publishTime>10/15/2019 13:50:33</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.ArrayOfString.datasource">
+      <publishTime>10/15/2019 13:50:21</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.CargaActividadesEconomicasResponse.datasource">
+      <publishTime>10/15/2019 13:50:28</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.CargaCobradorResponse.datasource">
+      <publishTime>10/15/2019 13:50:28</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.CargaDistritosResponse.datasource">
+      <publishTime>10/15/2019 13:50:28</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.CargaDptosResponse.datasource">
+      <publishTime>10/15/2019 13:50:28</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.CargaEstadoCivilResponse.datasource">
+      <publishTime>10/15/2019 13:50:28</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.CargaGeneroResponse.datasource">
+      <publishTime>10/15/2019 13:50:28</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.CargaMotivoNODesembolsoResponse.datasource">
+      <publishTime>10/15/2019 13:50:28</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.CargaMotivoNOPagoResponse.datasource">
+      <publishTime>10/15/2019 13:50:28</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.CargaTamnoNegocioResponse.datasource">
+      <publishTime>10/15/2019 13:50:28</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.CargaZonasAppClienteResponse.datasource">
+      <publishTime>10/15/2019 13:50:29</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.CargaZonasResponse.datasource">
+      <publishTime>10/15/2019 13:50:29</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.DemoProcResponse.datasource">
+      <publishTime>10/15/2019 13:50:28</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.EnviarChatResponse.datasource">
+      <publishTime>10/15/2019 13:50:43</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.GuardarFotoAsistenciaResponse.datasource">
+      <publishTime>10/15/2019 13:50:31</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.GuardarFotoAsistencia_2Response.datasource">
+      <publishTime>10/15/2019 13:50:31</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.GuardarFotoFirmaContratoResponse.datasource">
+      <publishTime>10/15/2019 13:50:34</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.GuardarFotoNegocioResponse.datasource">
+      <publishTime>10/15/2019 13:50:31</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.GuardarFotoResponse.datasource">
+      <publishTime>10/15/2019 13:50:30</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.GuardarFotoVerificacionResponse.datasource">
+      <publishTime>10/15/2019 13:50:34</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.GuardarFotoVerificacion_2Response.datasource">
+      <publishTime>10/15/2019 13:50:34</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.GuardarFotoVerificacion_3Response.datasource">
+      <publishTime>10/15/2019 13:50:34</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.GuardarFotoVerificacion_ProspeccionAppResponse.datasource">
+      <publishTime>10/15/2019 13:50:34</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.GuardarFotoYDepositoResponse.datasource">
+      <publishTime>10/15/2019 13:50:31</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.HelloWorldResponse.datasource">
+      <publishTime>10/15/2019 13:50:28</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.MarcaProspectoAtendidoResponse.datasource">
+      <publishTime>10/15/2019 13:50:32</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.MontoCuota2Response.datasource">
+      <publishTime>10/15/2019 13:50:32</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.MontoCuotaAmpliacionResponse.datasource">
+      <publishTime>10/15/2019 13:50:32</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.MontoCuotaAppResponse.datasource">
+      <publishTime>10/15/2019 13:50:23</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.MontoCuotaPorProdResponse.datasource">
+      <publishTime>10/15/2019 13:50:31</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.MontoCuotaResponse.datasource">
+      <publishTime>10/15/2019 13:50:31</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.MontoCuotaTasaResponse.datasource">
+      <publishTime>10/15/2019 13:50:26</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.MontoCuotaTasa_2Response.datasource">
+      <publishTime>10/15/2019 13:50:26</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.MontoCuota_2Response.datasource">
+      <publishTime>10/15/2019 13:50:32</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_ActualizaDatosCambioLineaResponse.datasource">
+      <publishTime>10/15/2019 13:50:27</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaCuotasAppResponse.datasource">
+      <publishTime>10/15/2019 13:50:21</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaDatosAprobacionResponse.datasource">
+      <publishTime>10/15/2019 13:50:25</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaDatosAprobacion_2Response.datasource">
+      <publishTime>10/15/2019 13:50:25</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaDatosCambioLineaResponse.datasource">
+      <publishTime>10/15/2019 13:50:26</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaDatosRegAmplResponse.datasource">
+      <publishTime>10/15/2019 13:50:24</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaDatosRegAmpl_2Response.datasource">
+      <publishTime>10/15/2019 13:50:24</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaKardexPieAppResponse.datasource">
+      <publishTime>10/15/2019 13:50:21</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaListadoCredXDesembolsarResponse.datasource">
+      <publishTime>10/15/2019 13:50:26</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaListadoDesembolsadoresResponse.datasource">
+      <publishTime>10/15/2019 13:50:26</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaListadoMoraParaSupervisorResponse.datasource">
+      <publishTime>10/15/2019 13:50:27</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaListadoSolicitudesResponse.datasource">
+      <publishTime>10/15/2019 13:50:25</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaMetasDiariasResponse.datasource">
+      <publishTime>10/15/2019 13:50:25</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaPagosAppResponse.datasource">
+      <publishTime>10/15/2019 13:50:21</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaProspectosAppResponse.datasource">
+      <publishTime>10/15/2019 13:50:22</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaResumenCalendarioResponse.datasource">
+      <publishTime>10/15/2019 13:50:21</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaSolAmplResponse.datasource">
+      <publishTime>10/15/2019 13:50:24</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RecuperaSolAmplXAprobarResponse.datasource">
+      <publishTime>10/15/2019 13:50:24</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraAmpliacionPorProductoResponse.datasource">
+      <publishTime>10/15/2019 13:50:25</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraAmpliacionResponse.datasource">
+      <publishTime>10/15/2019 13:50:25</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraAmpliacionXProdResponse.datasource">
+      <publishTime>10/15/2019 13:50:24</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraAprobacionAmpliacionResponse.datasource">
+      <publishTime>10/15/2019 13:50:25</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraAprobacionResponse.datasource">
+      <publishTime>10/15/2019 13:50:25</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraAprobacion_2Response.datasource">
+      <publishTime>10/15/2019 13:50:26</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraDesembolsoAmpliacionXProdResponse.datasource">
+      <publishTime>10/15/2019 13:50:24</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraDesembolsoPorProductoResponse.datasource">
+      <publishTime>10/15/2019 13:50:26</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraDesembolsoResponse.datasource">
+      <publishTime>10/15/2019 13:50:26</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraEntregaEfectivoResponse.datasource">
+      <publishTime>10/15/2019 13:50:26</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraExcepcionResponse.datasource">
+      <publishTime>10/15/2019 13:50:27</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraPermisoDoblePagoResponse.datasource">
+      <publishTime>10/15/2019 13:50:27</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraRechazoResponse.datasource">
+      <publishTime>10/15/2019 13:50:25</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraSMSEntradaResponse.datasource">
+      <publishTime>10/15/2019 13:50:27</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_RegistraSolicitudAmpliacionPorProductoResponse.datasource">
+      <publishTime>10/15/2019 13:50:25</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_ResumenCobranzaResponse.datasource">
+      <publishTime>10/15/2019 13:50:26</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_ValidaClienteRegAmplResponse.datasource">
+      <publishTime>10/15/2019 13:50:24</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil2_ValidaSIAplicaAmpliacionResponse.datasource">
+      <publishTime>10/15/2019 13:50:27</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Movil_EsclienteAntiguoResponse.datasource">
+      <publishTime>10/15/2019 13:50:27</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.NG_SMS_EnviarSMSDeEmpresaResponse.datasource">
+      <publishTime>10/15/2019 13:50:40</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.NG_SMS_RecuperaDatosEnvioSMSResponse.datasource">
+      <publishTime>10/15/2019 13:50:40</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.NG_SMS_RegistraEnvioSMSResponse.datasource">
+      <publishTime>10/15/2019 13:50:40</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.PA_ValidaLogueoResponse.datasource">
+      <publishTime>10/15/2019 13:50:44</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.PrefiltroGPSResponse.datasource">
+      <publishTime>10/15/2019 13:50:29</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.PrefiltroResponse.datasource">
+      <publishTime>10/15/2019 13:50:29</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.PrefiltroXProdResponse.datasource">
+      <publishTime>10/15/2019 13:50:30</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaAnulaDesembolsoResponse.datasource">
+      <publishTime>10/15/2019 13:50:33</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaCastigosResponse.datasource">
+      <publishTime>10/15/2019 13:50:22</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaChatsDeClienteResponse.datasource">
+      <publishTime>10/15/2019 13:50:44</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaChatsResponse.datasource">
+      <publishTime>10/15/2019 13:50:43</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaClienteAmpliacionResponse.datasource">
+      <publishTime>10/15/2019 13:50:41</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaClienteAmpliacion_2Response.datasource">
+      <publishTime>10/15/2019 13:50:41</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaClienteResponse.datasource">
+      <publishTime>10/15/2019 13:50:29</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaClienteSolCredResponse.datasource">
+      <publishTime>10/15/2019 13:50:31</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDatosActualizaTelefonoResponse.datasource">
+      <publishTime>10/15/2019 13:50:34</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDatosActualizaTelefonoYBancoResponse.datasource">
+      <publishTime>10/15/2019 13:50:22</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDatosBono2Response.datasource">
+      <publishTime>10/15/2019 13:50:23</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDatosBonoResponse.datasource">
+      <publishTime>10/15/2019 13:50:23</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDatosClaveClienteEnvioSMSResponse.datasource">
+      <publishTime>10/15/2019 13:50:44</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDatosEnvioSMSAvisosCumpleaniosResponse.datasource">
+      <publishTime>10/15/2019 13:50:23</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDatosEnvioSMSAvisosResponse.datasource">
+      <publishTime>10/15/2019 13:50:23</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDatosEnvioSMSAvisosTelefonicaResponse.datasource">
+      <publishTime>10/15/2019 13:50:23</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDatosEnvioSMSResponse.datasource">
+      <publishTime>10/15/2019 13:50:40</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDatosEnvioSMS_ClaroResponse.datasource">
+      <publishTime>10/15/2019 13:50:40</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDatosEnvioSMS_TelefonicaResponse.datasource">
+      <publishTime>10/15/2019 13:50:40</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDatosFotosResponse.datasource">
+      <publishTime>10/15/2019 13:50:31</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDatosMonitorCobranzaEnvioSMSResponse.datasource">
+      <publishTime>10/15/2019 13:50:43</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDatosUsuariosResponse.datasource">
+      <publishTime>10/15/2019 13:50:22</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDesembolsosDiaListaXProductoResponse.datasource">
+      <publishTime>10/15/2019 13:50:32</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaDetalleDeudaResponse.datasource">
+      <publishTime>10/15/2019 13:50:33</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaEvaluacionConsumoResponse.datasource">
+      <publishTime>10/15/2019 13:50:29</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaFechaMaximaIMandadosResponse.datasource">
+      <publishTime>10/15/2019 13:50:24</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaFotoAsesorResponse.datasource">
+      <publishTime>10/15/2019 13:50:22</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaFotoFirmaContratoResponse.datasource">
+      <publishTime>10/15/2019 13:50:34</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaFotosProspeccionResponse.datasource">
+      <publishTime>10/15/2019 13:50:27</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaFotosResponse.datasource">
+      <publishTime>10/15/2019 13:50:30</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaFotosVerificResponse.datasource">
+      <publishTime>10/15/2019 13:50:25</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaGestionMoraPersonaResponse.datasource">
+      <publishTime>10/15/2019 13:50:42</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaGestionMoraResponse.datasource">
+      <publishTime>10/15/2019 13:50:42</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaListadoChatsResponse.datasource">
+      <publishTime>10/15/2019 13:50:44</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaNegocioResponse.datasource">
+      <publishTime>10/15/2019 13:50:29</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaNumeroPagosConBloqueoResponse.datasource">
+      <publishTime>10/15/2019 13:50:41</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaNumeroPagosResponse.datasource">
+      <publishTime>10/15/2019 13:50:42</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaOfertasDetalleResponse.datasource">
+      <publishTime>10/15/2019 13:50:22</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaOfertasResponse.datasource">
+      <publishTime>10/15/2019 13:50:22</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaPagoClientePorProductoResponse.datasource">
+      <publishTime>10/15/2019 13:50:41</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaPagoClienteResponse.datasource">
+      <publishTime>10/15/2019 13:50:41</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaPagosListaItemResponse.datasource">
+      <publishTime>10/15/2019 13:50:33</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaPagosListaResponse.datasource">
+      <publishTime>10/15/2019 13:50:33</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaPagosListaXProductoResponse.datasource">
+      <publishTime>10/15/2019 13:50:32</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaPagosResponse.datasource">
+      <publishTime>10/15/2019 13:50:32</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaPagosXApeResponse.datasource">
+      <publishTime>10/15/2019 13:50:32</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaProductosDetalleResponse.datasource">
+      <publishTime>10/15/2019 13:50:29</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaProductosResponse.datasource">
+      <publishTime>10/15/2019 13:50:29</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaTasaPersonaResponse.datasource">
+      <publishTime>10/15/2019 13:50:23</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaVerificacionDatosResponse.datasource">
+      <publishTime>10/15/2019 13:50:34</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RecuperaVerificacionesResponse.datasource">
+      <publishTime>10/15/2019 13:50:42</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraActualizacionTelefonoResponse.datasource">
+      <publishTime>10/15/2019 13:50:35</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraActualizacionTelefonoYBancoResponse.datasource">
+      <publishTime>10/15/2019 13:50:22</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraCalendarioPorProductoResponse.datasource">
+      <publishTime>10/15/2019 13:50:42</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraCalendarioPorProducto_V2Response.datasource">
+      <publishTime>10/15/2019 13:50:43</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraCalendarioResponse.datasource">
+      <publishTime>10/15/2019 13:50:42</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraCalendario_2Response.datasource">
+      <publishTime>10/15/2019 13:50:43</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraCambioClaveClienteResponse.datasource">
+      <publishTime>10/15/2019 13:50:44</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraCambioClaveResponse.datasource">
+      <publishTime>10/15/2019 13:50:32</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraCuentaClienteFBResponse.datasource">
+      <publishTime>10/15/2019 13:50:24</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraCuentaClienteResponse.datasource">
+      <publishTime>10/15/2019 13:50:44</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraEntregaEfectivoResponse.datasource">
+      <publishTime>10/15/2019 13:50:31</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraEntregaEfectivo_WindowsResponse.datasource">
+      <publishTime>10/15/2019 13:50:31</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraEnvioSMSAvisoCumpleaniosResponse.datasource">
+      <publishTime>10/15/2019 13:50:23</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraEnvioSMSAvisoResponse.datasource">
+      <publishTime>10/15/2019 13:50:23</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraEnvioSMSAvisoTelefonicaResponse.datasource">
+      <publishTime>10/15/2019 13:50:23</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraEnvioSMSMonitorCobranzaResponse.datasource">
+      <publishTime>10/15/2019 13:50:43</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraEnvioSMSResponse.datasource">
+      <publishTime>10/15/2019 13:50:40</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraEnvioSMS_ClaroResponse.datasource">
+      <publishTime>10/15/2019 13:50:41</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraEnvioSMS_TelefonicaResponse.datasource">
+      <publishTime>10/15/2019 13:50:41</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraEvaluacionConsumoResponse.datasource">
+      <publishTime>10/15/2019 13:50:30</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraGestionMoraResponse.datasource">
+      <publishTime>10/15/2019 13:50:42</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraGPSNegResponse.datasource">
+      <publishTime>10/15/2019 13:50:33</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraGPSResponse.datasource">
+      <publishTime>10/15/2019 13:50:29</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraLibroReclamacionesResponse.datasource">
+      <publishTime>10/15/2019 13:50:43</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraMotivoNODesembolsoResponse.datasource">
+      <publishTime>10/15/2019 13:50:33</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraMotivoNOPagoResponse.datasource">
+      <publishTime>10/15/2019 13:50:33</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraNegocioResponse.datasource">
+      <publishTime>10/15/2019 13:50:30</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraNoGraciasMandadoResponse.datasource">
+      <publishTime>10/15/2019 13:50:24</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraPagoResponse.datasource">
+      <publishTime>10/15/2019 13:50:33</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraPersonaMovilResponse.datasource">
+      <publishTime>10/15/2019 13:50:30</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraPersonaMovilXProdResponse.datasource">
+      <publishTime>10/15/2019 13:50:30</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraPersonaMovil_2Response.datasource">
+      <publishTime>10/15/2019 13:50:30</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraPersonaResponse.datasource">
+      <publishTime>10/15/2019 13:50:30</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraProdutoDetalleResponse.datasource">
+      <publishTime>10/15/2019 13:50:30</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraProspectoAppResponse.datasource">
+      <publishTime>10/15/2019 13:50:45</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraProspectoFBResponse.datasource">
+      <publishTime>10/15/2019 13:50:45</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistrarProspectoDenegadoResponse.datasource">
+      <publishTime>10/15/2019 13:50:27</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistrarProspectoViableResponse.datasource">
+      <publishTime>10/15/2019 13:50:27</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraSolicitudAmpliacionResponse.datasource">
+      <publishTime>10/15/2019 13:50:41</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraSolicitudCreditoResponse.datasource">
+      <publishTime>10/15/2019 13:50:32</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraSolicitudCreditoXProductoResponse.datasource">
+      <publishTime>10/15/2019 13:50:32</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraSolicitudMandadoResponse.datasource">
+      <publishTime>10/15/2019 13:50:23</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraSolicitudONlineResponse.datasource">
+      <publishTime>10/15/2019 13:50:30</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.RegistraVerificacionCelularResponse.datasource">
+      <publishTime>10/15/2019 13:50:41</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.SMS_GestionaSMSClientesResponse.datasource">
+      <publishTime>10/15/2019 13:50:27</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.ValidaChatNOLeidosClienteResponse.datasource">
+      <publishTime>10/15/2019 13:50:45</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.ValidaChatNOLeidosResponse.datasource">
+      <publishTime>10/15/2019 13:50:44</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.ValidaClaveGeneraSMSClienteResponse.datasource">
+      <publishTime>10/15/2019 13:50:22</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.ValidaClaveSMSClienteCambioResponse.datasource">
+      <publishTime>10/15/2019 13:50:44</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.ValidaClaveSMSClienteResponse.datasource">
+      <publishTime>10/15/2019 13:50:43</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.ValidaUsuarioResponse.datasource">
+      <publishTime>10/15/2019 13:50:35</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Web_PagarCreditoCondonacionResponse.datasource">
+      <publishTime>10/15/2019 13:50:33</publishTime>
+    </File>
+    <File Include="Connected Services/WebServNeg/FastCredWebAPI.WebServNeg.Web_PagarCreditoResponse.datasource">
+      <publishTime>10/15/2019 13:50:33</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="DBNegocio.edmx.diagram">
+      <publishTime>10/08/2026 12:10:14</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>07/17/2024 11:04:41</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/17/2024 11:04:41</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/17/2024 11:04:41</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/17/2024 11:04:41</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/17/2024 11:04:41</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>07/17/2024 11:04:41</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.map">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.js">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.js">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.map">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Views/Home/Index.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.vbhtml">
+      <publishTime>07/17/2024 11:04:40</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/28/2026 21:24:27</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

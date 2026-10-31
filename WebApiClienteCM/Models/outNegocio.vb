@@ -1,0 +1,7 @@
+﻿Public Class outNegocio
+
+    Public Property nResultado As Integer
+    Public Property sRespuesta As String
+
+
+End Class

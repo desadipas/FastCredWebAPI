@@ -1,0 +1,1159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5ABEDBCD-2B58-4767-AD1D-207AB73E5B0C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FastCredWebAPI</RootNamespace>
+    <AssemblyName>FastCredWebAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>FastCredWebAPI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>FastCredWebAPI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Mvc" />
+    <Import Include="System.Web.Mvc.Ajax" />
+    <Import Include="System.Web.Mvc.Html" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agencias.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AgenciaZonas.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\FilterConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="App_Start\WebApiConfig.vb" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.vb" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.vb" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.vb" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.vb" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.vb" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.vb" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.vb" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.vb" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.vb" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.vb" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.vb" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.vb" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.vb" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.vb" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.vb" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.vb" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.vb" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.vb" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.vb" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.vb" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.vb" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.vb" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.vb" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.vb" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.vb" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.vb" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.vb" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.vb" />
+    <Compile Include="ArticuloFamilia.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloMarcas.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloModelo.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloTasacion.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloTasacionCred.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloTasacionDet.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloTasacionImagen.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtSmartPhone.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtSmartPhoneTempo.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BCPCab.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BCPDetalle.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bonos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Calendario25015.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CaptacAhorros.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CaptacKardex.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CaptacTasas.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CaptacTransac.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogoCodigos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CategoriaForzada.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\clsCoopevaldiariofotos.vb" />
+    <Compile Include="Models\clsCoopSolicitudGrupal.vb" />
+    <Compile Include="Models\clsCoopSolicitudGrupalSocio.vb" />
+    <Compile Include="Models\clsDataset.vb" />
+    <Compile Include="ClientesInactivos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Condonaciones.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CatalogoCodigosController.vb" />
+    <Compile Include="Controllers\ClienteController.vb" />
+    <Compile Include="Controllers\CredGastosOperacionController.vb" />
+    <Compile Include="Controllers\NegocioController.vb" />
+    <Compile Include="Controllers\ProspectosController.vb" />
+    <Compile Include="Controllers\SesionesController.vb" />
+    <Compile Include="Controllers\UsuariosController.vb" />
+    <Compile Include="CoopPersona.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evafamlbalance.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_EvalBalance.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalcosteoprod.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalcosteoprodcab.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalcostoventa.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evaldetbalance.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evaldeudas.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalestadoresult.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalfamdatospers.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalfamdetbal.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalfamdeudas.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalfameducacion.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalfamestganyperd.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalfamgastosfam.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalfamingresos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalfamingrestac.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalfamotrosneg.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalgasoper.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalgiros.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalingregreestac.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalinv.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalotrosneg.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalratios.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalsemovientes.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_Evaluacion.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_evalunidFam.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_giroventas.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_Presolicitud.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cop_Solicitud.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredCalendario.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredCalendario2107.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredCalendario2107_2.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredCalendarioHistorico.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredCalendarioHistoricoPagos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredCalendariosrodriguez.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="credcalendarioTempo.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredCalendarioTempo2.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredCalendario_1_7678.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredCalendario_26274.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredCalendario_Reprog.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredCalendario_tempo.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredCalendCond.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredEstados.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredGastos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Creditos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CreditosConsol.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="creditosconsol_20082019.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CreditosVencidosCongelados.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredKardex.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredLlamadasPrestamos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredPersonas.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CredTransac.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBNEGOCIO.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBNEGOCIO.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBNEGOCIO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBNEGOCIO.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DBNEGOCIO.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Empresas.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="errores.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EstadCrecimientoNormalYVencido.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EstadCredAnalista.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Evalfamcomentarios.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Evalfamfotos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="evalfamreferencias.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Evaluacion.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EvaluacionFotos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EvaluacionProductos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EvaluacionProductos_bkUp.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Evaluacion_Bkup.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FacturacionAnulada.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FacturacionMes.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Feriados.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FiltrosBandeja.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlujoProceso.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlujoProcesoCred.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlujoProcesoUsu.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GastosFinancierosAgencia.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GastosOperativos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GestionMora.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GpsPersonaHist.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GruposComunales.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GruposComunalesCuentaInterna.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GruposComunalesDetalle.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HistCuadreCaja.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialCelular.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inactivos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IndicadorFinanciero.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KardexExped.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LibroReclamacion.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LlamVerCliNoPago.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MarcadoAsistencia.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDetalle.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetaCobranza.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\clsActLinea.vb" />
+    <Compile Include="Models\clsAprobacionNueva.vb" />
+    <Compile Include="Models\clsAprobacionRegistro.vb" />
+    <Compile Include="Models\clsAsesores.vb" />
+    <Compile Include="Models\clsAsistencia.vb" />
+    <Compile Include="Models\clsBaseDatos.vb" />
+    <Compile Include="Models\clsBonoXCobranza.vb" />
+    <Compile Include="Models\clsBonoXColocacion.vb" />
+    <Compile Include="Models\clsCalendario.vb" />
+    <Compile Include="Models\clsCalendarioCli.vb" />
+    <Compile Include="Models\clsCalendarioPago.vb" />
+    <Compile Include="Models\clsCatalogocodigos.vb" />
+    <Compile Include="Models\clsCliCalendarioPago.vb" />
+    <Compile Include="Models\clsCliCreditos.vb" />
+    <Compile Include="Models\clsCliente.vb" />
+    <Compile Include="Models\clsClientePorProducto.vb" />
+    <Compile Include="Models\clsCliKardexpago.vb" />
+    <Compile Include="Models\clsCliNegocio.vb" />
+    <Compile Include="Models\clsCliPersona.vb" />
+    <Compile Include="Models\clsCliTarifarioMicro.vb" />
+    <Compile Include="Models\clsCliTarifarioSemanal.vb" />
+    <Compile Include="Models\clsCliTarifarioSemanalJunior.vb" />
+    <Compile Include="Models\clsConecta.vb" />
+    <Compile Include="Models\ClsConexion.vb" />
+    <Compile Include="Models\clsCoopevaldiario.vb" />
+    <Compile Include="Models\clsCoopevalfambalance.vb" />
+    <Compile Include="Models\clsCoopevalfamdatospers.vb" />
+    <Compile Include="Models\clsCoopevalfamdetbal.vb" />
+    <Compile Include="Models\clsCoopevalfamdeudas.vb" />
+    <Compile Include="Models\clsCoopevalfameducacion.vb" />
+    <Compile Include="Models\clsCoopevalfamestganyperd.vb" />
+    <Compile Include="Models\clsCoopevalfamingresos.vb" />
+    <Compile Include="Models\clsCoopevalfamingrestac.vb" />
+    <Compile Include="Models\clsCoopevalfamotrosneg.vb" />
+    <Compile Include="Models\clsCoopevalgastosfam.vb" />
+    <Compile Include="Models\clsCoopevalgrupal.vb" />
+    <Compile Include="Models\clscoopevalpyme.vb" />
+    <Compile Include="Models\clsCoopevalunidfam.vb" />
+    <Compile Include="Models\clsCoopPersona.vb" />
+    <Compile Include="Models\clsCooppersonadireccion.vb" />
+    <Compile Include="Models\clsCoopPreSol.vb" />
+    <Compile Include="Models\clsCoopSolicitud.vb" />
+    <Compile Include="Models\clsCredito.vb" />
+    <Compile Include="Models\clsCreditoData.vb" />
+    <Compile Include="Models\clsCreditosAAprobar.vb" />
+    <Compile Include="Models\clsCreditosVencidosNuevos.vb" />
+    <Compile Include="Models\clscredpyme.vb" />
+    <Compile Include="Models\clsCuotasCliente.vb" />
+    <Compile Include="Models\clsDatosActLinea.vb" />
+    <Compile Include="Models\clsDatosAprobacion.vb" />
+    <Compile Include="Models\clsDatosBonoSupvervisor.vb" />
+    <Compile Include="Models\clsDesembolsoItem.vb" />
+    <Compile Include="Models\clsDesembolsoNuevo.vb" />
+    <Compile Include="Models\clsDesembolsos.vb" />
+    <Compile Include="Models\clsEvalAgricola.vb" />
+    <Compile Include="Models\clsevalagricolaproycostos.vb" />
+    <Compile Include="Models\clsEvalAgricolaProyVentas.vb" />
+    <Compile Include="Models\clsEvalCosteoProd.vb" />
+    <Compile Include="Models\clsEvalCosteoProdDet.vb" />
+    <Compile Include="Models\clsevalcostoventa.vb" />
+    <Compile Include="Models\clsEvalDetBalance.vb" />
+    <Compile Include="Models\clsEvalDeudas.vb" />
+    <Compile Include="Models\clsEvalfamcomentarios.vb" />
+    <Compile Include="Models\clsEvalfamfotos.vb" />
+    <Compile Include="Models\clsEvalfamreferencias.vb" />
+    <Compile Include="Models\clsevalgasoper.vb" />
+    <Compile Include="Models\clsevalgiros.vb" />
+    <Compile Include="Models\clsEvalIngEgrEstac.vb" />
+    <Compile Include="Models\clsEvalinventario.vb" />
+    <Compile Include="Models\clsEvalNegocio.vb" />
+    <Compile Include="Models\clsevalotrosneg.vb" />
+    <Compile Include="Models\clsEvalsemovientes.vb" />
+    <Compile Include="Models\clsevalventas.vb" />
+    <Compile Include="Models\clsFirmaContrato.vb" />
+    <Compile Include="Models\clsfirmacontratodata.vb" />
+    <Compile Include="Models\clsFotos.vb" />
+    <Compile Include="Models\clsGrupoComunal.vb" />
+    <Compile Include="Models\clsGrupoComunalSocio.vb" />
+    <Compile Include="Models\clsIngresoEgreso.vb" />
+    <Compile Include="Models\clsItemAmpliacion.vb" />
+    <Compile Include="Models\clsItemAsesor.vb" />
+    <Compile Include="Models\clsItemBandejaVerific.vb" />
+    <Compile Include="Models\clsKardexPago.vb" />
+    <Compile Include="Models\clsMotivoNoPago.vb" />
+    <Compile Include="Models\clsNegocio.vb" />
+    <Compile Include="Models\clsPagos.vb" />
+    <Compile Include="Models\clsPagosCliente.vb" />
+    <Compile Include="Models\clsPersona.vb" />
+    <Compile Include="Models\clsPosicionCliente.vb" />
+    <Compile Include="Models\clsPrecalif.vb" />
+    <Compile Include="Models\clsRecord.vb" />
+    <Compile Include="Models\clsRecordNuevo.vb" />
+    <Compile Include="Models\clsResumenCobranza.vb" />
+    <Compile Include="Models\clsSBSHist.vb" />
+    <Compile Include="Models\clsSBSHistDet.vb" />
+    <Compile Include="Models\clsSMS.vb" />
+    <Compile Include="Models\clsSMSCliente.vb" />
+    <Compile Include="Models\clsSolicitudApp.vb" />
+    <Compile Include="Models\clsTraza.vb" />
+    <Compile Include="Models\clsVerificacionCliente.vb" />
+    <Compile Include="Models\clsVerificacionClienteImagenes.vb" />
+    <Compile Include="Models\clsvoucher.vb" />
+    <Compile Include="Models\clsZonas.vb" />
+    <Compile Include="Models\CuadreCajaUsuario.vb" />
+    <Compile Include="Models\dAbonoDesemb.vb" />
+    <Compile Include="Models\dAsignaAsesor.vb" />
+    <Compile Include="Models\dCatalogocodigos.vb" />
+    <Compile Include="Models\dDesembolso.vb" />
+    <Compile Include="Models\dFotosNegocio.vb" />
+    <Compile Include="Models\dNegocio.vb" />
+    <Compile Include="Models\dPersona.vb" />
+    <Compile Include="Models\dProspeccionEmp.vb" />
+    <Compile Include="Models\dSolPyme.vb" />
+    <Compile Include="Models\dTasacion.vb" />
+    <Compile Include="Models\dTasacionimagenes.vb" />
+    <Compile Include="Models\dTransacPago.vb" />
+    <Compile Include="Models\dUsuario.vb" />
+    <Compile Include="Models\dUsuarioroles.vb" />
+    <Compile Include="Models\dVerificacion.vb" />
+    <Compile Include="Models\dVerificacionimagenes.vb" />
+    <Compile Include="Models\dZonas.vb" />
+    <Compile Include="Models\inCatalogoCodigos.vb" />
+    <Compile Include="Models\inCredGastosOperacion.vb" />
+    <Compile Include="Models\inNegocio.vb" />
+    <Compile Include="Models\inNegocioCliente.vb" />
+    <Compile Include="Models\inUsuarios.vb" />
+    <Compile Include="Models\iProspecto.vb" />
+    <Compile Include="Models\iProspectoResp.vb" />
+    <Compile Include="Models\iSesion.vb" />
+    <Compile Include="Models\outCatalogoCodigos.vb" />
+    <Compile Include="Models\outCredGastosOperacion.vb" />
+    <Compile Include="Models\outNegocio.vb" />
+    <Compile Include="Models\outNegocioCliente.vb" />
+    <Compile Include="Models\outUsuarios.vb" />
+    <Compile Include="Models\PagoCredito.vb" />
+    <Compile Include="Models\PersonaRelac.vb" />
+    <Compile Include="Models\PoliticasInternas.vb" />
+    <Compile Include="Models\SesionResp.vb" />
+    <Compile Include="MotivosNoPago.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controllers\HomeController.vb" />
+    <Compile Include="Controllers\ValuesController.vb" />
+    <Compile Include="NG_SMS.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NG_SmsUsuarios.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OfertaPedidos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OfertaProductos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ofertas.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OfertasPersona.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Operaciones.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PagosProcesados.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PantallasParametros.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersCentralNegativa.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Persona.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonaFotos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonaFotosFirmaContrato.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonaVig_Res.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProspeccionOnline.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Provision.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProvisionHist.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RCC_CLiente.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reactivados.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SaldosBanco.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sesion.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SistFormularios.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sistFormulariosRoles.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sistFunciones.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sistFuncionesParam.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sistNegocioReglas.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sistNegocioReglasDependencias.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sistNegocioReglasParam.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMS_Codigos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMS_Cumpleanios.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitudesEmpenio.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitudesProcesadas.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitudOnline.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitudOnlineEmpenio.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockExped.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tarifario.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TarifarioAgencia.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TarifarioGrupal.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TarifarioMicro.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TarifarioMicroJuniorSemanal.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TarifarioMicroSemanal.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TarifarioPyme.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TarifarioPymeCat.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TempoAprobacionCredito.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TempoDesembolsoCredito.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TempoVerificCliente.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TopesLineaCredito.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Transac.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioRoles.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsuariosClientes.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usuariostempo.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsuariosTempo2.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioUbicacion.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Varnegocio.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vDatosPersonaAprobacion.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VentasEmpenio.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VentasKardex.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VerificacionAlertas.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VerificacionDomic.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VerificacionDomicImagenes.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vEvaluacionFotos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vEvaluacionPersona.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vGCSocios.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VitacoraAprob.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VitacoraErrores.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VitacoraPreFiltro.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vit_PagosOffline.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vListaClientesPorVerificar.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vListaClientesPorVerificarFotos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vListaCreditosPorDesembolsar.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vListadoPagos.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vListaNegocios.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vPersonasBase.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vPrestamoPorAprobar.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vRCCTotal.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vRecordCliente.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vRecordCliente_2.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vZonas.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Zonas.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ZonasPais.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Zona_Asesor.vb">
+      <DependentUpon>DBNEGOCIO.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="DBNEGOCIO.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBNEGOCIO.edmx</DependentUpon>
+      <LastGenOutput>DBNEGOCIO.Context.vb</LastGenOutput>
+    </Content>
+    <Content Include="DBNEGOCIO.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBNEGOCIO.edmx</DependentUpon>
+      <LastGenOutput>DBNEGOCIO.vb</LastGenOutput>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.vbhtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.vbhtml" />
+    <EntityDeploy Include="DBNEGOCIO.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DBNEGOCIO.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="DBNEGOCIO.edmx.diagram">
+      <DependentUpon>DBNEGOCIO.edmx</DependentUpon>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Areas\HelpPage\Views\_ViewStart.vbhtml" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.vbhtml" />
+    <Content Include="Views\Home\Index.vbhtml" />
+    <Content Include="Views\Shared\Error.vbhtml" />
+    <Content Include="Views\Shared\_Layout.vbhtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComConecta\ComConecta.vbproj">
+      <Project>{0a9c79c2-4ca0-42bc-9c22-4d9d9f82a370}</Project>
+      <Name>ComConecta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComCredito\ComCredito.vbproj">
+      <Project>{5d3ec156-ee4d-4a0c-b587-714da660a077}</Project>
+      <Name>ComCredito</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComPersona\ComPersona.vbproj">
+      <Project>{9d94411e-d062-4f2e-93f2-89c61c9a71c5}</Project>
+      <Name>ComPersona</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComTipos\ComTipos.vbproj">
+      <Project>{0d09d6f8-086e-496b-bfde-a7d49f304b2d}</Project>
+      <Name>ComTipos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8978</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/FastCredWebAPI</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>http://localhost:8178</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
