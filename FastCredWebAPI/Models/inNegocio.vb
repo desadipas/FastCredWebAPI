@@ -14395,5 +14395,180 @@ Public Class inNegocio
 
     End Function
 
+    Public Function RecuperaConsultaSolicitudesxCred_Consulta() As outNegocio
+
+        Dim R As New outNegocio
+        Dim i, k As Integer
+        Dim D(2) As String
+
+        Dim oConex As SqlConnection
+        Dim oConect As New clsConecta
+        Dim sCadConexion As String
+        Dim C As SqlCommand
+        Dim oComm As SqlCommand
+        Dim dr As SqlDataReader
+
+        sCadConexion = oConect.gsCadConex
+
+        oConex = New SqlConnection(sCadConexion)
+
+        oConex.Open()
+        C = oConex.CreateCommand()
+        C.CommandText = "SET DATEFORMAT DMY"
+        C.ExecuteNonQuery()
+        C = Nothing
+
+        Try
+            i = 0
+            For k = 0 To oBandejaDesembolsoNuevo.Count - 1
+                oComm = New SqlCommand("PA_RecuperaBandejaConsultaSolicitudesxCred", oConex)
+                oComm.Parameters.Add("@nCodCred", SqlDbType.Int).Value = oBandejaDesembolsoNuevo(k).nCodCred
+                oComm.Parameters.Add("@nTipoConsulta", SqlDbType.Int).Value = 1
+                oComm.Parameters.Add("@cDoc", SqlDbType.VarChar).Value = cDoc
+                oComm.CommandTimeout = 0
+                oComm.CommandType = CommandType.StoredProcedure
+                oComm.ExecuteNonQuery()
+                dr = oComm.ExecuteReader(CommandBehavior.SingleResult)
+
+                While dr.Read
+                    ReDim Preserve R.oConsultaSolicitudes(i)
+                    R.oConsultaSolicitudes(i) = New clsConsultaSolicitudes
+                    R.oConsultaSolicitudes(i).cCliente = dr.Item("cCliente")
+                    R.oConsultaSolicitudes(i).nCodCred = dr.Item("nCodCred")
+                    R.oConsultaSolicitudes(i).cDoc = dr.Item("cdoc")
+                    R.oConsultaSolicitudes(i).cUsuOrig = dr.Item("cUsuOrig")
+                    R.oConsultaSolicitudes(i).cProd = dr.Item("cProd")
+                    R.oConsultaSolicitudes(i).cEstado = dr.Item("cEstado")
+                    R.oConsultaSolicitudes(i).cComentario = dr.Item("cComentario")
+                    R.oConsultaSolicitudes(i).nPrestamo = dr.Item("nMontoAprobado")
+                    R.oConsultaSolicitudes(i).nPrestamoOrig = dr.Item("nMontoOriginal")
+                    R.oConsultaSolicitudes(i).nCuotas = dr.Item("nCuotaAprobado")
+                    R.oConsultaSolicitudes(i).nCuotasOrig = dr.Item("nCuotaOriginal")
+                    R.oConsultaSolicitudes(i).cComentario = dr.Item("cComentario")
+                    i = i + 1
+                End While
+                dr.Close()
+                dr = Nothing
+            Next
+
+
+            If i > 0 Then
+                i = 0
+                For j = 0 To R.oConsultaSolicitudes.Count - 1
+                    oComm = New SqlCommand("PA_RecuperaVerificacionxCredito", oConex)
+                    oComm.Parameters.Add("@nCodCred", SqlDbType.Int).Value = R.oConsultaSolicitudes(j).nCodCred
+                    oComm.Parameters.Add("@nTipoConsulta", SqlDbType.Int).Value = 1
+                    oComm.Parameters.Add("@cDoc", SqlDbType.VarChar).Value = cDoc
+                    oComm.CommandTimeout = 0
+                    oComm.CommandType = CommandType.StoredProcedure
+                    oComm.ExecuteNonQuery()
+
+                    dr = oComm.ExecuteReader(CommandBehavior.SingleResult)
+
+                    While dr.Read
+                        ReDim Preserve R.oBandejaVerificacion(i)
+                        R.oBandejaVerificacion(i) = New clsVerificacionCliente
+                        R.oBandejaVerificacion(i).cDoc = R.oConsultaSolicitudes(j).cDoc
+                        R.oBandejaVerificacion(i).nCodCred = R.oConsultaSolicitudes(j).nCodCred
+                        R.oBandejaVerificacion(i).nVerifCuali = dr.Item("nVerifCuali")
+                        R.oBandejaVerificacion(i).nVerifRefe = dr.Item("nVerifRefe")
+                        R.oBandejaVerificacion(i).nCumpleConAntNeg = dr.Item("nCumpleConAntNeg")
+                        R.oBandejaVerificacion(i).nEsPropietario = dr.Item("nEsPropietario")
+                        R.oBandejaVerificacion(i).nPoseeEmpleados = dr.Item("nPoseeEmpleados")
+                        R.oBandejaVerificacion(i).nNroEmpleados = dr.Item("nNroEmpleados")
+                        R.oBandejaVerificacion(i).nTieneRotuloVisible = dr.Item("nTieneRotuloVisible")
+                        R.oBandejaVerificacion(i).nNegoCuentaInfra = dr.Item("nNegoCuentaInfra")
+                        R.oBandejaVerificacion(i).nCuentaPermiOpe = dr.Item("nCuentaPermiOpe")
+                        R.oBandejaVerificacion(i).nObservaAfluCli = dr.Item("nObservaAfluCli")
+                        R.oBandejaVerificacion(i).nUbicaFacilAcceso = dr.Item("nUbicaFacilAcceso")
+                        R.oBandejaVerificacion(i).nTieneBuenaRefeZona = dr.Item("nTieneBuenaRefeZona")
+                        R.oBandejaVerificacion(i).nTieneProspBuenaActi = dr.Item("nTieneProspBuenaActi")
+                        R.oBandejaVerificacion(i).nTieneHoraAtencion = dr.Item("nTieneHoraAtencion")
+                        R.oBandejaVerificacion(i).nAquilaCasa = dr.Item("nAquilaCasa")
+                        R.oBandejaVerificacion(i).nTiempoAquila = dr.Item("nTiempoAquila")
+                        R.oBandejaVerificacion(i).nTieneDependientes = dr.Item("nTieneDependientes")
+                        R.oBandejaVerificacion(i).nNroDependientes = dr.Item("nNroDependientes")
+                        R.oBandejaVerificacion(i).cHoraInicio = dr.Item("cHoraInicio")
+                        R.oBandejaVerificacion(i).cHoraFinal = dr.Item("cHoraFinal")
+                        R.oBandejaVerificacion(i).nNivelDelincuencia = dr.Item("nNivelDelincuencia")
+                        R.oBandejaVerificacion(i).cComentarioCPD = dr.Item("cComentarioCPD")
+                        i = i + 1
+                    End While
+                    dr.Close()
+                    dr = Nothing
+                Next
+            End If
+
+            If i > 0 Then
+                For j = 0 To R.oBandejaVerificacion.Count - 1
+                    oComm = New SqlCommand("PA_ReferenciasVericacion", oConex)
+                    oComm.Parameters.Add("@nCodCred", SqlDbType.Int).Value = R.oBandejaVerificacion(j).nCodCred
+                    oComm.Parameters.Add("@nTipoConsulta", SqlDbType.Int).Value = 1
+                    oComm.Parameters.Add("@cDoc", SqlDbType.VarChar).Value = cDoc
+                    oComm.CommandTimeout = 0
+                    oComm.CommandType = CommandType.StoredProcedure
+                    oComm.ExecuteNonQuery()
+
+                    dr = oComm.ExecuteReader(CommandBehavior.SingleResult)
+                    i = 0
+                    While dr.Read
+                        ReDim Preserve R.oBandejaVerificacion(j).oReferencias(i)
+                        R.oBandejaVerificacion(j).oReferencias(i) = New clsVerificacionReferencia
+                        R.oBandejaVerificacion(j).oReferencias(i).nCodCred = R.oBandejaVerificacion(j).nCodCred
+                        R.oBandejaVerificacion(j).oReferencias(i).cNombres = dr.Item("cNombres")
+                        R.oBandejaVerificacion(j).oReferencias(i).cTelefono = dr.Item("cTelefono")
+                        R.oBandejaVerificacion(j).oReferencias(i).nRecomendado = dr.Item("nRecomienda")
+                        R.oBandejaVerificacion(j).oReferencias(i).cRecomendado = dr.Item("cRecomiendaSustento")
+                        i = i + 1
+                    End While
+                    dr.Close()
+                    dr = Nothing
+
+                Next
+                For j = 0 To R.oBandejaVerificacion.Count - 1
+                    oComm = New SqlCommand("PA_ImagenesVerificacion", oConex)
+                    oComm.Parameters.Add("@nCodCred", SqlDbType.Int).Value = R.oBandejaVerificacion(j).nCodCred
+                    oComm.Parameters.Add("@nTipoConsulta", SqlDbType.Int).Value = 1
+                    oComm.Parameters.Add("@cDoc", SqlDbType.VarChar).Value = cDoc
+                    oComm.CommandTimeout = 0
+                    oComm.CommandType = CommandType.StoredProcedure
+                    oComm.ExecuteNonQuery()
+                    dr = oComm.ExecuteReader(CommandBehavior.SingleResult)
+                    i = 0
+                    While dr.Read
+                        ReDim Preserve R.oBandejaVerificacion(j).oImagenes(i)
+                        R.oBandejaVerificacion(j).oImagenes(i) = New clsVerificacionClienteImagenes
+                        R.oBandejaVerificacion(j).oImagenes(i).nCodCred = R.oBandejaVerificacion(j).nCodCred
+                        R.oBandejaVerificacion(j).oImagenes(i).iImagen = UnicodeBytesToString(dr.Item("nFoto"))
+                        R.oBandejaVerificacion(j).oImagenes(i).cTipo = dr.Item("cTipo")
+                        R.oBandejaVerificacion(j).oImagenes(i).nID = i
+                        i = i + 1
+                    End While
+                    dr.Close()
+                    dr = Nothing
+                Next
+            End If
+
+
+            oConex.Close()
+
+            D(0) = "1"
+            D(1) = "Registro Correcto"
+
+        Catch ex As Exception
+            D(0) = "0"
+            D(1) = ex.Message
+
+        End Try
+
+
+        R.sRespuesta = D(1)
+        R.nResultado = CInt(D(0))
+
+        Return R
+
+
+    End Function
+
 
 End Class

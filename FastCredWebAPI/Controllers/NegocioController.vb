@@ -291,6 +291,8 @@ Namespace Controllers
                     R = CC.RecuperaCanceladosHoy()
                 Case 143
                     R = CC.RecuperaExperianData()
+                Case 144
+                    R = CC.RecuperaConsultaSolicitudesxCred_Consulta()
 
             End Select
 
